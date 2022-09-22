@@ -1,10 +1,8 @@
 
 @echo off
-REM setlocal enabledelayedexpansion
-REM set _str="You've met with a terrible fate, haven't you?"
-REM for /l %%g in (1,1,50) do echo [1A!_str:~0,%%g!&timeout 1 >nul
-REM set "str=—Happy Mask Salesman"
-REM setlocal disabledelayedexpansion
+echo. "You've met with a terrible fate, haven't you?"
+timeout 3 >nul
+cls
 
 set /a _money=0
 set /a _milk=0
@@ -139,50 +137,3 @@ goto :market2
 :gameover
 
 pause&exit
-
-
-REM for /d %%g in ("C:\SynergyII\cdvideocache\*") do (
-	REM for /d %%h in ("%%g\*") do xcopy "%%h\" "C:\temp" /i/e/s
-REM )
-REM pause
-
-
-
-REM xcopy /e/s/i "C:\VideoPlayer\*.*" "%~dp0\temp"
-
-
-
-REM cd /d "C:\VideoPlayer\"
-
-REM for /d %%g in (*) do xcopy /e /i "%%g\%%g\" "%~dp0\"
-
-
-REM pause
-REM @echo off
-REM setlocal enabledelayedexpansion
-REM set _flag=0
-REM set "_var="
-REM for /f "delims=" %%g in ('net user /domain usernam') do (
-	REM echo %%g|findstr /b /c:"Global Group memberships" >nul
-	REM if !errorlevel! equ 0 set _flag=1
-	REM if !_flag! equ 1 (
-		REM for /f "tokens=1,2* delims=*" %%h in ("%%g") do (
-			REM if not "%%i"=="" call :cleanVar "%%i"
-			REM if not "%%j"=="" call :cleanVar "%%j"
-		REM )
-	REM )
-REM )
-
-REM echo %_var:~1%
-
-REM pause&exit
-
-REM :cleanVar
-REM set "_str=%~1"
-REM :cleanVarLoop
-REM if "%_str:~-1%"==" " (
-	REM set "_str=%_str:~0,-1%"
-	REM goto :cleanVarLoop
-REM )
-REM set "_var=%_var%,%_str%"
-REM exit /b
